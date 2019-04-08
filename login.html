@@ -1,10 +1,17 @@
 <html>
+<head>
+	<meta charset="utf-8">
+</head>
+
+
 <body>
 <div style="width: 100%; text-align: center;display: inline-block; margin: 0 auto;">
 	
 	<h1>MyChat</h1>
 	
 	<div style="display: none; background-color: pink; color: red; margin: 5px 0;" id="error"><span style=" font-weight: bold;">Oh snap!</span> Invalid password or username</div>
+
+	<div style="display: none; background-color: #00FF00; color: green; margin: 5px 0;" id="check"><span style=" font-weight: bold;">NICE!</span> Login Succesful</div>
 
 	<div style="padding-bottom: 5px;">
 		<input id="username" type="text" placeholder="Username" style="display: inline-block; width: 260px;">
@@ -14,7 +21,7 @@
 		<input id="password" type="password" placeholder="Password" style="display: inline-block; width: 260px;">
 	</div>
 	
-	<input type="submit" onclick="if (getElementById('password').) {}  getElementById('error').style.display='inline-block';">
+	<input type="submit" onclick="if (getElementById('password').value!='contraceña'){getElementById('error').style.display='inline-block'; } else{getElementById('check').style.display='inline-block';}">
 
 </div>
 </body>
